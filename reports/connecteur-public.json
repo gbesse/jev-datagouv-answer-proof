@@ -1,0 +1,8 @@
+{
+  "date": "2026-10-04",
+  "kind": "integration-publique-en-lecture",
+  "preuveLimite": "Compte rendu d’exécution ; les données ne sont pas un corpus d’évaluation Jev.",
+  "endpoint": "https://tabular-api.data.gouv.fr/api/resources/008a2dda-2c60-4b63-b910-998f6f818089/data/",
+  "operation": "Lecture réelle filtrée sur Code_postal__exact=75001",
+  "result": "Une ligne, meta.total=1, une page, champs du fichier La Poste reçus"
+}

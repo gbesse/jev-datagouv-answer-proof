@@ -1,0 +1,57 @@
+{
+  "query": {
+    "docId": "a",
+    "resourceId": "ressource-synthetique-42",
+    "definition": "Nombre d’inscriptions, et non de personnes distinctes.",
+    "unit": "inscriptions",
+    "filters": {
+      "year": 2025,
+      "territory": "75"
+    },
+    "rows": [
+      {
+        "value": 120,
+        "year": 2025,
+        "territory": "75"
+      },
+      {
+        "value": 80,
+        "year": 2025,
+        "territory": "75"
+      }
+    ],
+    "totalRows": 2,
+    "hasNext": false
+  },
+  "answer": {
+    "docId": "b",
+    "description": "Nombre total d’inscriptions ; une personne peut s’inscrire plusieurs fois.",
+    "value": 200,
+    "unit": "inscriptions",
+    "year": 2025,
+    "territory": "75"
+  },
+  "id": "jev-datagouv-answer-proof-dev-paraphrase",
+  "documents": [
+    {
+      "id": "a",
+      "text": "dossier.query : {\"resourceId\": \"ressource-synthetique-42\", \"definition\": \"Nombre d’inscriptions, et non de personnes distinctes.\", \"unit\": \"inscriptions\", \"filters\": {\"year\": 2025, \"territory\": \"75\"}, \"rows\": [{\"value\": 120, \"year\": 2025, \"territory\": \"75\"}, {\"value\": 80, \"year\": 2025, \"territory\": \"75\"}], \"totalRows\": 2, \"hasNext\": false}",
+      "source": {
+        "uri": "fixture:a",
+        "date": "2026-10-04",
+        "licence": "CC0",
+        "kind": "synthetique"
+      }
+    },
+    {
+      "id": "b",
+      "text": "dossier.answer : {\"description\": \"Nombre total d’inscriptions ; une personne peut s’inscrire plusieurs fois.\", \"value\": 200, \"unit\": \"inscriptions\", \"year\": 2025, \"territory\": \"75\"}",
+      "source": {
+        "uri": "fixture:b",
+        "date": "2026-10-04",
+        "licence": "CC0",
+        "kind": "synthetique"
+      }
+    }
+  ]
+}

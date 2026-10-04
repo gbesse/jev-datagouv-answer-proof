@@ -1,0 +1,59 @@
+{
+  "name": "@gbesse/jev-datagouv-answer-proof",
+  "version": "0.1.0",
+  "description": "Recalcule les agrégats et vérifie millésime, filtres et pagination.",
+  "type": "module",
+  "license": "MIT",
+  "engines": {
+    "node": ">=22"
+  },
+  "exports": {
+    ".": {
+      "types": "./src/index.d.mts",
+      "import": "./src/index.mjs"
+    },
+    "./jev": {
+      "types": "./src/jev.d.mts",
+      "import": "./src/jev.mjs"
+    },
+    "./adapters": {
+      "types": "./src/adapters.d.mts",
+      "import": "./src/adapters.mjs"
+    }
+  },
+  "bin": {
+    "jev-datagouv-answer-proof": "./bin/jev-datagouv-answer-proof.mjs"
+  },
+  "scripts": {
+    "test": "node --test",
+    "demo": "node examples/demo.mjs",
+    "demo:limite": "node examples/cas-limite.mjs",
+    "demo:revue": "node examples/revue-humaine.mjs",
+    "bench": "node scripts/bench.mjs",
+    "bench:live": "node --env-file=.env scripts/bench.mjs --live",
+    "typecheck": "tsc --noEmit --strict --target ES2022 --module NodeNext docs/public-api-types.mts",
+    "demo:import": "node examples/import.mjs"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "typescript": "5.9.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gbesse/jev-datagouv-answer-proof.git"
+  },
+  "files": [
+    "src",
+    "bin",
+    "examples",
+    "docs",
+    "corpus",
+    "scripts"
+  ],
+  "keywords": [
+    "jev",
+    "france",
+    "open-data",
+    "evidence"
+  ]
+}
